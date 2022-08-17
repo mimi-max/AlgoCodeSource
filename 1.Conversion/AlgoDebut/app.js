@@ -1,9 +1,16 @@
 function conversion(degCel) {
 
+    if(typeof(degCel)==="string"){
+
+        return "Données entrée non correct"
+    }
+    else {
+        return degCel * (9/5) + 32
+    }
 
 }
 
-console.log(conversion(50));
+console.log(conversion('50'));
 
 
 
