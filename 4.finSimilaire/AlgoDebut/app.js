@@ -1,10 +1,21 @@
 function finSimilaire(str, fin) {
+  let n= str.length - fin.length
+  let sameLetter ="";
 
+  for(let i=n;i<=str.length-1;i++){
+    sameLetter+=str[i];
+  }
+  
+  if (sameLetter===fin){
+      return "la fin est similaire"
+    }else{
+      return'pas similaire'
+    }
+ 
 
 }
 
 console.log(finSimilaire("ours", "rs"));
-
 
 
 // ----------------- ÉNONCÉ -----------------
