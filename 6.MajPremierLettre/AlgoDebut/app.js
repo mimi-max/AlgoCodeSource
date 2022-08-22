@@ -1,21 +1,21 @@
 function maj(str) {
-  
+
   let convertStrInArray = str.split(' ');
-  let string=[];
-  
-  for(let i=0;i<convertStrInArray.length;i++){
-    let convertStrInArrayInArray= convertStrInArray[i].split('');
-    convertStrInArrayInArray[0]=convertStrInArrayInArray[0].toUpperCase();
- 
-   string.push(convertStrInArrayInArray.join(''))
+  let string = [];
+
+  for (let i = 0; i < convertStrInArray.length; i++) {
+    let convertStrInArrayInArray = convertStrInArray[i].split('');
+    convertStrInArrayInArray[0] = convertStrInArrayInArray[0].toUpperCase();
+
+    string.push(convertStrInArrayInArray.join(''))
 
   }
- return string.join(' ')
+  return string.join(' ')
 
 }
 
 console.log(maj("Les sanglots longs des violons de l'automne..."));
-//let letter = text.charAt(0);
+
 
 // ----------------- ÉNONCÉ -----------------
 
@@ -24,7 +24,7 @@ console.log(maj("Les sanglots longs des violons de l'automne..."));
 
 // ----------------- CONSEILS -----------------
 
-// Fonctions utiles : 
+// Fonctions utiles :
 // map(); méthode "callback", qui permet de traiter chaque élément d'un tableau et
 // d'en retourner un nouveau avec les éléments modifiés.
 // toUpperCase(); transforme en majuscule.
